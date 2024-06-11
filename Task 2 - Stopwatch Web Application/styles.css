@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0F3443 0%, #34E89E 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.stopwatch-container {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: bolder;
+    color: #245f77;
+    font-family: "Concert One", sans-serif;
+  /* font-style: normal; */
+}
+
+.time {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #035f3a;
+    font-family: "Concert One", sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    background: #245f77;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    flex: 1;
+    margin: 0 10px;
+    font-family: "Concert One", sans-serif;
+}
+
+.button:hover {
+    background: #023245;
+    transform: translateY(-3px);
+}
+
+.button:active {
+    background: #5190a9;
+    transform: translateY(0);
+}
