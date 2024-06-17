@@ -88,15 +88,15 @@
 }
 
 #reset{
-    font-weight: 500;
+    font-weight: 900;
     justify-items:center;
     margin: 0 10px;
     background-color: #511869;
     color: aliceblue;
     border-radius: 5px;
     font-size: large;
-    height: 40px;
-    width: 100px;
+    height: 80px;
+    width: 200px;
    
 }
 .line{
@@ -106,6 +106,9 @@
     position: absolute;
     /* rotate: ;*/
     transition: width 1s ease-in-out;
+}
+.gameInfo{
+    align-items: center;
 }
 
 @media screen and (max-width: 950px)
