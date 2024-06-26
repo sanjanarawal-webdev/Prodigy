@@ -5,6 +5,10 @@
     box-sizing: border-box;
     /* background-color: #F7DCBE; */
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #F7DCBE;
     color:#2A1D2F;      
@@ -250,18 +254,18 @@ span{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #2A1D2F;
+    /* border: 1px solid #2A1D2F; */
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color:#FA8B60;
+    background-color:#e84c0f;
     transition: background 0.5s;
-    color: #2A1D2F;
+    color: #F7DCBE;
 }
 .btn:hover{
-    background: #e84c0f;
+    background: #2A1D2F;
     color:#F7DCBE;
-    border-color: #e84c0f;
+    border-color: #2A1D2F;
 }
 
 
@@ -325,4 +329,68 @@ form .btn2{
     background-color: #2A1D2F;
     font-weight: 300;
     margin-top: 20px;
+}
+
+/* ---------------------------Css for small screens-------------------------  */
+nav span svg{
+    display: none;
+}
+@media only screen and (max-width:621px){
+    .header-text{
+        margin-top: 137%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav span svg{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #FA8B60;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        color: #e84c0f;
+    }
+    nav ul span{
+        color: #2A1D2F;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 25px;
+    }
+    .about-col-2{
+        font-size: 18px;
+    }
+    .tab-links{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
 }
