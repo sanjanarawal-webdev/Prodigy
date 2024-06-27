@@ -63,7 +63,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: #A10035;
 }
 .navlist a:hover::before{
     width: 100%;
@@ -83,12 +83,13 @@
 .content{
     margin-left: 200px;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
+    /* -----vertical line-------- */
     border-left: 4px solid #A10035;
-    padding: 20px 50px;
+    padding: 20px 60px;
 }
 .content h3{
     color: rgb(73, 73, 73);
@@ -128,8 +129,6 @@
     margin: 5px;
 }
 
-
-
 @media screen and (max-width: 1207px){
     .content h1{
         font-size: 45px;
@@ -142,11 +141,12 @@
 
 @media screen and (max-width: 1110px){
     .content{
-        padding: 0px, 40px;
+        padding: 0px 40px;
         gap: 10px;
     }
-    .content h1{
-        font-size: 40px;
+    .content p{
+        font-size: 14px;
+        line-height: 25px;
     }
 }
 
@@ -168,12 +168,26 @@
     }
     .navlist-active{
         right: 0;
+
     }
     .hamburger{
         display: block;
         z-index: 5;
     }
     .hero img{
-        display: none;
+       display: none;     
+    }
+    .content h1{
+        font-size: 50px;
+    }
+    .content p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .content{
+        border-left: 4px solid #A10035;
+        /* padding: 20px 60px; */
+        padding: 20px 20px;
+        gap: 15px;
     }
 }
